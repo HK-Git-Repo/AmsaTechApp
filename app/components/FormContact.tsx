@@ -34,7 +34,7 @@ export const FormContact: React.FC = () => {
     if (isValid) {
       setIsLoading(true);
       try {
-        const response = await fetch("/api/sendEmail", {
+        const response = await fetch("https://www.amsatech.ma/api/sendEmail", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
