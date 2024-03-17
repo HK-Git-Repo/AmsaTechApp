@@ -34,7 +34,7 @@ export const FormContact: React.FC = () => {
     if (isValid) {
       setIsLoading(true);
       try {
-        console.log("Host is : "+process.env.MAIL_AWS_HOST);
+        alert(process.env.MAIL_AWS_HOST);
         const response = await fetch("/api/sendEmail", {
           method: "POST",
           headers: {
