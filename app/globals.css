@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+header {
+  z-index: 100001 !important;
+}
+
+/* Hide the scrollbar track */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Style the scrollbar handle or thumb */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.black-gradient {
+  background: #000;
+  background: linear-gradient(-90deg, #000 0%, rgba(53, 52, 54, 0) 100%);
+  background: -webkit-linear-gradient(-90deg,
+      #000 0%,
+      rgba(53, 52, 54, 0) 100%);
+}
+
+.violet-gradient {
+  background: #804dee;
+  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(-90deg,
+      #804dee 0%,
+      rgba(60, 51, 80, 0) 100%);
+}
+
+.blue-gradient {
+  background: #308ce2;
+  background: linear-gradient(-90deg, #308ce2 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(-90deg,
+      #308ce2 0%,
+      rgba(60, 51, 80, 0) 100%);
+}
+
+.green-pink-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.orange-text-gradient {
+  background: #f12711;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #f12711,
+      #f5af19);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #f12711,
+      #f5af19);
+}
+
+.green-text-gradient {
+  background: #11998e;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #11998e,
+      #38ef7d);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #11998e,
+      #38ef7d);
+}
+
+.blue-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #56ccf2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #2f80ed,
+      #56ccf2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #2f80ed,
+      #56ccf2);
+}
+
+.pink-text-gradient {
+  background: #ec008c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #ec008c,
+      #fc6767);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #ec008c,
+      #fc6767);
+}
+
+.on-shadow {
+  box-shadow: 0px  0px 100px 100px white;
+}
+
+.blue-shadow {
+  box-shadow: 0px 0px 20px 1px rgb(69, 160, 235);
+}
+
+.primary-shadow {
+  box-shadow: 0px 0px 20px 1px #A39976;
+}
+
+.primary-shadow-hover:hover {
+  box-shadow: 0px 0px 20px 1px #A39976;
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #FFFFFF;
+  bottom: 100px;
+}
