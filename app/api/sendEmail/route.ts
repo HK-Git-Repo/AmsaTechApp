@@ -2,12 +2,12 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
-  host: process.env.AWS_MAIL_HOST,
-  port: Number(process.env.AWS_MAIL_PORT),
+  host: process.env.MAIL_AWS_HOST,
+  port: Number(process.env.MAIL_AWS_PORT),
   secure: true,
   auth: {
-    user: process.env.AWS_MAIL_USER,
-    pass: process.env.AWS_MAIL_PASS,
+    user: process.env.MAIL_AWS_USER,
+    pass: process.env.MAIL_AWS_PASS,
   },
 });
 
